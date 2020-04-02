@@ -1,6 +1,7 @@
 *{
     margin:0;
     font-family: 'Lato','Arial',sans-serif;
+    box-sizing: border-box;
 }
 html{
     font-family: 'Lato','Arial',sans-serif;
@@ -26,6 +27,7 @@ h1{
     font-weight: 300;
     text-transform: uppercase;
 }
+
 .btn-pella{
     background-color: #e67e22;
     text-decoration: none;
@@ -55,9 +57,10 @@ h1{
     float: right;
     margin-top: 30px;
     list-style: none;
+
 }
 .main-nav li{
-    display: inline-block;
+    display: inline;
     margin-right: 70px;
     border-bottom: 2px solid transparent;
 }
@@ -79,35 +82,161 @@ h1{
     
 }
 .main-grid{
-    width: 90%;
+    
+    width: 80%;
     display: grid;
-    grid-template-rows: 100px 170px;
+    grid-template-rows: 100px 250px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 20px;
-    margin: 20px auto auto auto;
-    
+    margin: 60px auto 50px auto;
+    grid-row-gap: 20px;
+  
     }
 .heading{
-    grid-column: span 4;
     
+    grid-column: span 4;
+   
 }
+
 .meal-display{
+
     display: grid;
     grid-template-rows: 200px 200px;
-    grid-template-columns: 350px 350px 350px 350px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
-    margin: 25px auto auto auto;
-    background-color: chartreuse;
+    margin: 50px auto auto auto;
+    background-color: #000;
 }
 .images{
+    
     height: 200px;
     width: 297px;
     object-fit: fill;
-    transform: scale(1.10);
-    width: 300px;
+    transform: scale(1.05);
+    width: 100%;
     
 }
 .meal-display img:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
     transition: transform 0.3s;
+}
+.how_works{
+    width: 50%;
+    border: 2px solid black;
+    margin: 50px auto auto auto;
+}
+.how_works img{
+    height: 350px;
+    width: 180px;
+    object-fit: fill;
+    margin-left: 70px;
+
+}
+.text{
+    position: absolute;
+    margin-right: 50px;
+}
+.b{
+    border: 2px solid black;
+}
+.main_frame{
+    border: 2px solid black;
+
+}
+.second_frame{
+    list-style: none;
+    width: 100%;
+    
+}
+.second_frame li{ 
+    width: 25%;
+    float: left;
+}
+.food{
+    width: 100%;
+    margin: 0;
+    height: auto;
+}
+.food img{
+    width: 100%;
+    transform: scale(1.15)
+}
+.food img:hover{
+    transform: scale(1.05);
+
+}
+.b{
+    text-align: center;
+    word-spacing: 2px;
+}
+.featured-text{
+    border: 1px solid black;
+    font-size: 150%;
+    position: absolute;
+    margin-left: 320px;
+}
+.featured-text2{
+    margin-left: 50px;
+    font-size: 100%;
+    width: 70%;
+}
+.heading2{
+    font-size: 120%;
+    font-weight: 100;
+}
+.heading3{
+    font-size: 120%;
+    font-weight: 100
+}
+.heading5{
+    font-size: 120%;
+    font-weight: 100
+}
+.heading6{
+    font-size: 120%;
+    font-weight: 100
+}
+.content2{
+    font-size: 19px;
+}
+.content3{
+    font-size: 19px;
+}
+.content5{
+    font-size: 19px;
+}
+.content6{
+    font-size: 19px;
+}
+.how-it-works{
+    width: 80%;
+    margin-left: 18%;
+    margin-top: 50px;
+}
+.images-iphone{
+    width:"100%";
+     margin-left: 50px;
+     height: 399px;
+}
+.how-text{
+    font-size: 20px;
+    margin-top: 10px;
+    
+}
+.how-works{
+    margin-left: 30px;
+    font-size: 20px;
+    margin-top: 9px;
+    
+}
+.how-text{
+    float: left;
+    border: 2px solid orange;
+    margin-bottom: 9px;
+    width: 50px;
+    height: 50px;
+    padding-top: 9px;
+    padding-left: 18px;
+    border-radius: 26px;
+    background-color: orange;
 }
